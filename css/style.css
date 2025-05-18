@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* font-style igual para a pagina toda */
+* {
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active {
+  background-color: #0077cc;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.contato-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 40px 20px 20px;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contato-infos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.contato-infos i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contato-infos div {
+  width: 180px;
+  font-size: 0.95em;
+  color: #000;
+}
+
+footer {
+  background-color: #1e3fa2;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 30px;
+  margin-top: auto;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+  .contato-infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 2px solid #0077cc;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active {
+  background-color: #0077cc;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  padding: 40px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.content img {
+  width: 40%;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.text-content {
+  width: 55%;
+}
+
+.text-content h2 {
+  margin-top: 0;
+}
+
+.section-title {
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  background-color: white;
+}
+
+#content-text {
+  width: auto;
+}
+
+/* RODAPÉ ESTILIZADO */
+footer {
+  background-color: #19388a;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+  margin: 10px 20px;
+}
+
+.footer-col h4 {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content img,
+  .text-content {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-col {
+    margin: 20px 0;
+  }
+}
+
+/* CSS para o Carrossel */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: rgba(25, 56, 138, 0.8);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carousel-btn:hover {
+  background-color: #19388a;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-track img {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .carousel-btn {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+/* CSS para a seção de contato */
+.contato-infos {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contato-descricao {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.contato-blocos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+  font-size: 1em;
+}
+
+.contato-blocos div {
+  min-width: 180px;
+  margin-bottom: 20px;
+}
+
