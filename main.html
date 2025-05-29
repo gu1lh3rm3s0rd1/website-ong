@@ -6,30 +6,33 @@
   <title>Instituto Lund Solidária</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/+p6n3jYORe0u6XKoDsYFBIg8aR3DNQep3SRAg0dQZDJjP7TwRGU9sUX4r1b9shzC9uOIE8fVZCmN7+zftn3lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
 
 </head>
 <body>
 
   <header id="inicio">
-        <img src="#" alt="Instituto Lund Solidária" class="logo">
-      <nav>
-        <a href="#inicio" class="active">INÍCIO</a>
-        <a href="#sobre">SOBRE</a>
-        <a href="#projetos">PROJETOS</a>
-        <a href="#ajudar">COMO AJUDAR</a>
-        <a href="#depoimentos">DEPOIMENTOS</a>
-        <a target="_blank" href="contact.html">CONTATOS</a>
-      </nav>
+    <img src="/images/logo.jpg" alt="Instituto Lund Solidária" class="logo">
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <img src="/images/cardapio.png" alt="Menu" style="height:28px;width:28px;">
+    </button>
+    <nav>
+      <a href="#inicio" class="active">INÍCIO</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#projetos">PROJETOS</a>
+      <a href="#ajudar">COMO AJUDAR</a>
+      <a href="#depoimentos">DEPOIMENTOS</a>
+      <a target="_blank" href="contact.html">CONTATOS</a>
+    </nav>
   </header>
 
   <div class="hero">
-    <img src="#" alt="Imagem">
+    <img src="" alt="Imagem">  <!-- Seria legal uma foto da ong. ia ficar massa. -->
   </div>
 
 <section id="sobre">
   <div class="content">
-    <img src="imagens/instituto-lund.jpg" alt="Imagem do Instituto Lund Solidária">
+    <img src="" alt="Imagem do Instituto Lund Solidária"> <!-- Seria legal uma foto da ong. ia ficar massa. -->
     <div class="text-content">
       <h2>Instituto Lund Solidária</h2>
       <h4><em>Transformando vidas com cuidado, ciência e solidariedade</em></h4>
@@ -57,46 +60,63 @@
 <div class="carousel-container">
   <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
   <div class="carousel-track" id="carouselTrack">
-    <img src="https://via.placeholder.com/400x250?text=Projeto+1" alt="Projeto 1">
-    <img src="https://via.placeholder.com/400x250?text=Projeto+2" alt="Projeto 2">
-    <img src="https://via.placeholder.com/400x250?text=Projeto+3" alt="Projeto 3">
-    <img src="https://via.placeholder.com/400x250?text=Projeto+4" alt="Projeto 4">
+    <img src="/images/projeto1/IMG-20250523-WA0020.jpg" alt="Projeto 1" data-title="Dia Internacional do RIM" 
+      data-desc=" Dia Internacional do RIM foi criado para conscientizar a população sobre a importância da saúde renal e a prevenção de doenças renais." 
+      data-gallery="/images/projeto1/IMG-20250523-WA0020.jpg,/images/projeto1/IMG-20250523-WA0017.jpg,/images/projeto1/IMG-20250523-WA0019.jpg"> 
+    <img src="/images/projeto2/IMG-20250523-WA0015.jpg" alt="Projeto 2" data-title="Dia Internacional da Mulher" 
+      data-desc="Dia Internacional da Mulher celebrado com um evento especial para homenagear as mulheres atendidas pelo Instituto Lund Solidária."
+      data-gallery="/images/projeto2/IMG-20250523-WA0015.jpg,/images/projeto2/IMG-20250523-WA0016.jpg,/images/projeto2/IMG-20250523-WA0018.jpg"> 
+      <img src="/images/projeto3/IMG-20250528-WA0117.jpg" alt="Projeto 3" data-title="Projeto 4" 
+      data-desc="Descrição do Projeto 4"
+      data-gallery="/images/projeto3/IMG-20250528-WA0117.jpg,/images/projeto3/IMG-20250528-WA0118.jpg,/images/projeto3/IMG-20250528-WA0119.jpg, /images/projeto3/IMG-20250528-WA0120.jpg, /images/projeto3/IMG-20250528-WA0121.jpg, /images/projeto3/IMG-20250528-WA0122.jpg, /images/projeto3/IMG-20250528-WA0123.jpg, /images/projeto3/IMG-20250528-WA0124.jpg, /images/projeto3/IMG-20250528-WA0125.jpg, /images/projeto3/IMG-20250528-WA0126.jpg, /images/projeto3/IMG-20250528-WA0127.jpg, /images/projeto3/IMG-20250528-WA0128.jpg">
   </div>
   <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<!-- Modal para exibir imagem e descrição -->
+<div id="modalGaleria" class="modal-galeria" style="display:none;">
+  <span class="close-modal">&times;</span>
+  <img class="modal-img" src="" alt="">
+  <div class="modal-caption">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <div id="modal-thumbs" style="margin-top:16px; display:flex; gap:10px; justify-content:center;"></div>
+  </div>
 </div>
 
 <section id="ajudar">
   <div class="content" style="text-align: center;">
     <div id="content-text" class="text-content">
       <h2>💛 Trabalhe Conosco</h2>
-      <h4><em>Use seu talento para transformar vidas</em></h4>
+      <h4><em>Faça parte da transformação social</em></h4>
       
-      <p>No Instituto Lund Solidária, acreditamos que cada pessoa pode ser uma ponte entre a solidariedade e a mudança real.</p>
+      <p>No Instituto Lund Solidária, acreditamos que cada pessoa pode ser agente de mudança. Se você é movido(a) por empatia, acredita no poder do coletivo e deseja contribuir para uma sociedade mais justa, venha fazer parte do nosso time.</p>
 
-      <p>Se você é movido(a) por empatia, acredita na força do coletivo e quer fazer parte de uma causa que importa, esse é o seu lugar. Nosso compromisso é com a dignidade, a saúde e o desenvolvimento biopsicossocial das pessoas em vulnerabilidade — e isso só é possível com o apoio de pessoas como você.</p>
+      <p>Nosso compromisso é com a dignidade, saúde e desenvolvimento biopsicossocial das pessoas em situação de vulnerabilidade. Isso só é possível com o engajamento de pessoas como você, que querem doar tempo, conhecimento e energia para transformar vidas.</p>
 
-      <p>Junte-se a nós e ajude a construir um mundo mais justo, humano e solidário. Estamos sempre em busca de pessoas com coração aberto, dispostas a contribuir com seu tempo, conhecimento e energia.</p>
-
-      <h4>✨ Áreas em que você pode atuar:</h4>
-      <ul style="list-style-type: none; padding: 0;">
-        <li>🤝 Projetos sociais</li>
-        <li>📢 Comunicação e redes sociais</li>
-        <li>🫂 Atendimento e acolhimento</li>
-        <li>🚚 Logística e distribuição</li>
+      <h4>Áreas de atuação para voluntários:</h4>
+      <ul style="list-style-type: none; padding: 0; margin-bottom: 24px;">
+        <li>🤝 Projetos sociais e atendimento direto</li>
+        <li>📢 Comunicação, marketing e redes sociais</li>
+        <li>🫂 Apoio e acolhimento aos beneficiários</li>
+        <li>🚚 Logística e distribuição de doações</li>
         <li>💡 Captação de recursos e parcerias</li>
       </ul>
 
-      <p>Entre em contato conosco pelos nossos canais de comunicação contando um pouco sobre você e como gostaria de contribuir. Sua participação pode transformar vidas!</p>
+      <p>
+        <strong>Como participar?</strong><br>
+        Entre em contato conosco pelos nossos canais oficiais e conte um pouco sobre você e como gostaria de contribuir. Sua participação é fundamental para ampliarmos nosso impacto social.
+      </p>
+      <a href="contact.html" class="banner-btn" style="margin-top:18px;display:inline-block;">Quero ser voluntário</a>
     </div>
   </div>
 </section>
 
-<section id="depoimentos">
+<!-- <section id="depoimentos">
   <div class="content">
-    <!-- depoimentos -->
 
   </div>
-</section>
+</section> -->
 
   <footer>
     <div class="footer-col">
@@ -105,10 +125,17 @@
         <li><a target="_blank" href="contact.html">Contato</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.instagram.com/institutolund/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <h4>Redes Socias</h4>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/institutolund/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+            <img src="/images/instagram.png" alt="Instagram">
+          </a>
         </li>
       </ul>
     </div>
@@ -116,21 +143,22 @@
     <div class="footer-col">
       <h4>Endereço</h4>
       <p>
-        Rua, Número da rua - Bairro<br>
-        Cidade/UF  CEP:00000-000
+        R. Conde Afonso Celso, 300 - Jardim Sumare,<br>
+        Ribeirão Preto - SP, 14025-040
       </p>
+      <div id="mapa" style="width:100%;height:200px;margin-top:10px;"></div>
     </div>
 
     <div class="footer-col">
       <h4>Horário de Visita</h4>
       <p>
-        Todos os dias 14:00 às 16:00h
+        Seguna à Sábado: 14:00 às 16:00h
       </p>
     </div>
   </footer>
 
 <script src="js/script.js"></script>
-
+<script src="/js/carrossel.js"></script>
 
 </body>
 </html>
