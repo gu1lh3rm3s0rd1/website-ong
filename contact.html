@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato - Instituto Lund Solidária</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Instituto Lund Solidária</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/+p6n3jYORe0u6XKoDsYFBIg8aR3DNQep3SRAg0dQZDJjP7TwRGU9sUX4r1b9shzC9uOIE8fVZCmN7+zftn3lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
+
 </head>
+
 <body>
 
-  <header>
-    <img src="#" alt="Instituto Lund Solidária" class="logo">
+  <header id="inicio">
+    <img src="/images/logo.jpg" alt="Instituto Lund Solidária" class="logo">
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <img src="/images/cardapio.png" alt="Menu" style="height:28px;width:28px;">
+    </button>
     <nav>
-      <a href="main.html/#inicio">INÍCIO</a>
-      <a href="main.html/#sobre">SOBRE</a>
-      <a href="main.html/#projetos">PROJETOS</a>
-      <a href="main.html/#ajudar">COMO AJUDAR</a>
-      <a href="main.html/#depoimentos">DEPOIMENTOS</a>
+      <a href="main.html#inicio">INÍCIO</a>
+      <a href="main.html#sobre">SOBRE</a>
+      <a href="main.html#projetos">PROJETOS</a>
+      <a href="main.html#ajudar">COMO AJUDAR</a>
+      <a href="main.html#depoimentos">DEPOIMENTOS</a>
       <a href="contact.html" class="active">CONTATOS</a>
     </nav>
   </header>
@@ -24,25 +30,29 @@
   <div class="contato-title">ENTRE EM CONTATO CONOSCO</div>
 
     <div class="contato-infos">
-    <p class="contato-descricao">
-        O Instituto Lund Solidária está sempre aberto ao diálogo. Se você deseja tirar dúvidas, fazer sugestões, realizar parcerias ou contribuir com a nossa causa, será um prazer ouvir você. 
-        Juntos, podemos transformar vidas com cuidado, ciência e solidariedade.
-    </p>
+      <p class="contato-descricao">
+          O Instituto Lund Solidária está sempre aberto ao diálogo. Se você deseja tirar dúvidas, fazer sugestões, realizar parcerias ou contribuir com a nossa causa, será um prazer ouvir você. 
+          Juntos, podemos transformar vidas com cuidado, ciência e solidariedade.
+      </p>
 
-    <div class="contato-blocos">
-        <div>
-        <i class="fas fa-phone"></i><br>
-        (16) 1234-5678
-        </div>
-        <div>
-        <i class="fas fa-envelope"></i><br>
-        contato@institutolund.org.br
-        </div>
-        <div>
-        <i class="fas fa-clock"></i><br>
-        Atendimento: Segunda à Sexta, das 08h às 17h
-        </div>
-    </div>
+      <div class="contato-blocos">
+          <div>
+            <a href="tel:+551635052260" style="text-decoration:none; color:inherit;">
+              <img src="/images/contato.png" alt="Telefone"><br>
+              (16) 35052260
+            </a>
+          </div>
+          <div>
+            <a href="mailto:contato@institutolund.org.br" style="text-decoration:none; color:inherit;">
+              <img src="/images/gmail.png" alt="E-mail"><br>
+              contato@institutolund.org.br
+            </a>
+          </div>
+          <div>
+            <img src="/images/calendario.png" alt="Horário"><br>
+            Atendimento: Segunda à Sexta, das 08h às 17h
+          </div>
+      </div>
     </div>
 
 
@@ -50,27 +60,32 @@
     <div class="footer-col">
       <h4>Informações</h4>
       <ul>
-        <li><a href="contact.html">Contato</a></li>
-        <li><a href="main.html/#sobre">Sobre</a></li>
-        <li class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+        <li><a target="_blank" href="contact.html">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      <h4>Redes Socias</h4>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/institutolund/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+            <img src="/images/instagram.png" alt="Instagram">
+          </a>
         </li>
       </ul>
     </div>
+
     <div class="footer-col">
       <h4>Endereço</h4>
       <p>
-        Rua Exemplo, 123 - Bairro Central<br>
-        Ribeirão Preto/SP &nbsp; CEP: 14000-000
+        R. Conde Afonso Celso, 300 - Jardim Sumare,<br>
+        Ribeirão Preto - SP, 14025-040
       </p>
+      <div id="mapa" style="width:100%;height:200px;margin-top:10px;"></div>
     </div>
+
     <div class="footer-col">
       <h4>Horário de Visita</h4>
       <p>
-        Todos os dias, das 14h às 16h
+        Seguna à Sábado: 14:00 às 16:00h
       </p>
     </div>
   </footer>

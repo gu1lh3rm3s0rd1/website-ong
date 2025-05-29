@@ -4,18 +4,15 @@ body {
   background-color: #f9f9f9;
 }
 
-header {
+/* header {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
   border-bottom: 1px solid #ddd;
-}
+} */
 
-.logo {
-  height: 50px;
-}
 
 html {
   scroll-behavior: smooth;
@@ -35,16 +32,14 @@ body {
 }
 
 /* font-style igual para a pagina toda */
-* {
+/* * {
+  font-style: italic;
+} */
+
+body, p, h1, h2, h3, h4, h5, h6, li, a {
   font-style: italic;
 }
 
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
 
 nav a.active {
   background-color: #0077cc;
@@ -82,7 +77,7 @@ nav a.active {
   color: #000;
 }
 
-footer {
+/* footer {
   background-color: #1e3fa2;
   color: white;
   display: flex;
@@ -90,7 +85,7 @@ footer {
   justify-content: space-between;
   padding: 40px 30px;
   margin-top: auto;
-}
+} */
 
 .footer-col {
   flex: 1 1 200px;
@@ -144,10 +139,10 @@ footer {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
 header {
@@ -179,9 +174,8 @@ nav a.active {
 }
 
 .hero {
-  width: 100%;
+  width: 17%;
   max-height: 300px;
-  overflow: hidden;
 }
 
 .hero img {
@@ -309,10 +303,10 @@ footer {
 
 .carousel-container {
   position: relative;
-  width: 100%;
+  width: 12%;
   max-width: 1000px;
   margin: 30px auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: white;
   padding: 20px 0;
 }
@@ -325,11 +319,12 @@ footer {
 .carousel-track img {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  /* height: -12%; */
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 10px;
   margin: 0 10px;
+
 }
 
 .carousel-btn {
@@ -356,6 +351,34 @@ footer {
 
 .carousel-btn.next {
   right: 10px;
+}
+
+.modal-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+}
+.modal-galeria .close-modal {
+  position: absolute;
+  top: 30px; right: 40px;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+.modal-galeria .modal-img {
+  max-width: 90vw;
+  max-height: 60vh;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.modal-galeria .modal-caption {
+  color: #fff;
+  text-align: center;
 }
 
 /* Responsivo */
@@ -399,3 +422,86 @@ footer {
   margin-bottom: 20px;
 }
 
+/* ...existing code... */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  /* border: none; */
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #19388a;
+    margin-left: auto;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 10;
+    border-bottom: 2px solid #0077cc;
+  }
+  nav.open {
+    display: flex;
+  }
+  nav a {
+    margin: 15px 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    position: relative;
+  }
+}
+
+/* Estilo para imagem personalizada de rede social no footer */
+.footer-col ul li img[alt="Instagram"] {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.footer-col ul li a:hover img[alt="Instagram"] {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 2px 8px rgba(25,56,138,0.18);
+}
+
+
+/* Estilo para imagens personalizadas de contato na seção de contato */
+.contato-blocos img[alt="Telefone"],
+.contato-blocos img[alt="E-mail"],
+.contato-blocos img[alt="Horário"] {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.contato-blocos div:hover img[alt="Telefone"],
+.contato-blocos div:hover img[alt="E-mail"],
+.contato-blocos div:hover img[alt="Horário"] {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 2px 8px rgba(25,56,138,0.18);
+}
